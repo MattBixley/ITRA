@@ -1,0 +1,48 @@
+---
+title: "ITRA"
+author: "Matt Bixley"
+date: "17 August 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+# GPS
+Merge the GSER .gpx files
+http://www.terrainium.com.au/blog/gser/
+
+## Mergers
+https://jmelhus.com/
+http://gotoes.org/strava/Combine_GPX_TCX_FIT_Files.php
+
+100 Miler
+Leg 1 – Mt Buller to Gardiners Hut		
+Leg 2 – Gardiners Hut to Upper Howqua Campground		
+Leg 3 – Upper Howqua Campground to Mt Speculation Campground		
+Leg 4 – Mt Speculation Campground to East Buffalo Rd		
+Leg 5 – East Buffalo Rd to Selwyn Creek Rd		
+Leg 6 – Selwyn Creek Rd to Mt St Bernard		
+Leg 7 – Mt St Bernard to Harrietville		
+Leg 8 – Harrietville to Bright
+
+50 Miler
+Leg 1 – Mt Buller to Gardiners Hut
+Leg 2 – Gardiners Hut to Upper Howqua Campground
+Leg 3 – Upper Howqua Campground to Mt Speculation Campground
+Leg 4 – Mt Speculation Campground to Lake Cobbler
+
+Merged to a single file and uploaded to STRAVA
+
+shows that sections are out of order. 
+0-60k is good. next section has been taken and added to the end of the file. suspect this is section 4, and it is. need to manipulate the time in file 4 to make it go in order, I think.
+
+OK, yup, out of order
+
+
+
+
+
