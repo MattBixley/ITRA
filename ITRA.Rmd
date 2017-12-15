@@ -15,9 +15,19 @@ library(tidyverse)
 
 
 ```{r readentry, eval=F}
-entry <- read.table(file="Data\") 
+# sudo R CMD javareconf <- then restart RStudio
+library(xlsx)
+entry <- read.xlsx(file="Data/GSERentry.xlsx",sheetName = 1, header=T) %>% 
+    select(.,RaceNumber,Bib,RegistrationType,FirstName,LastName,DOB,Suburb.or.Town,State,Postcode,Country)
 ```
 
+```{r}
+head(entry)
+```
+
+```{r}
+# use a sprintf on the results bib to make it the same length as the entry bib number
+```
 
 
 
